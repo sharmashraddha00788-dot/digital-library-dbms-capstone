@@ -1,0 +1,32 @@
+# Operating System Files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+.DS_Store
+.Spotlight-V100
+.Trashes
+
+# Microsoft Office Temporary Files
+~$*.docx
+~$*.xlsx
+~$*.pptx
+*.tmp
+
+# Python Cache & Virtual Environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.env
+.venv/
+env/
+venv/
+
+# Editor Settings
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace

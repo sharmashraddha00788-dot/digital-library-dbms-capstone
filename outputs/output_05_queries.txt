@@ -1,0 +1,215 @@
++----------------------------------------+------------------+------------------+
+| title                                  | publication_year | available_copies |
++----------------------------------------+------------------+------------------+
+| Database System Concepts               |             2019 |                2 |
+| Fundamentals of Database Systems       |             2016 |                2 |
+| Introduction to Algorithms             |             2022 |                1 |
+| Operating System Concepts              |             2018 |                1 |
+| Let Us C                               |             2020 |                3 |
+| Computer Organization and Architecture |             2021 |                2 |
++----------------------------------------+------------------+------------------+
++-------------------------------------------+--------+
+| title                                     | price  |
++-------------------------------------------+--------+
+| Introduction to Algorithms                | 920.00 |
+| Operating System Concepts                 | 880.00 |
+| Database System Concepts                  | 850.00 |
+| Fundamentals of Database Systems          | 790.00 |
+| Discrete Mathematics and Its Applications | 780.00 |
+| Computer Organization and Architecture    | 720.00 |
+| Higher Engineering Mathematics            | 650.00 |
+| The Discovery of India                    | 450.00 |
+| Let Us C                                  | 420.00 |
+| A Brief History of Time                   | 399.00 |
+| Wings of Fire                             | 299.00 |
+| The Guide                                 | 275.00 |
+| Gitanjali                                 | 199.00 |
++-------------------------------------------+--------+
++---------+-------------------------------------------+------------------+------------------+----------------+
+| book_id | title                                     | category_name    | available_copies | shelf_location |
++---------+-------------------------------------------+------------------+------------------+----------------+
+|       1 | Database System Concepts                  | Computer Science |                2 | CS-A1          |
+|       2 | Fundamentals of Database Systems          | Computer Science |                2 | CS-A2          |
+|       3 | Introduction to Algorithms                | Computer Science |                1 | CS-A3          |
+|       4 | Higher Engineering Mathematics            | Mathematics      |                3 | MA-B1          |
+|       5 | Wings of Fire                             | Biography        |                1 | BI-C1          |
+|       6 | The Discovery of India                    | History          |                1 | HI-D1          |
+|       7 | A Brief History of Time                   | Science          |                2 | SC-E1          |
+|       8 | The Guide                                 | Fiction          |                1 | FI-F1          |
+|       9 | Operating System Concepts                 | Computer Science |                1 | CS-A4          |
+|      10 | Let Us C                                  | Computer Science |                3 | CS-A5          |
+|      11 | Discrete Mathematics and Its Applications | Mathematics      |                2 | MA-B2          |
+|      13 | Computer Organization and Architecture    | Computer Science |                2 | CS-A6          |
++---------+-------------------------------------------+------------------+------------------+----------------+
++----------+-----------+-------------+----------------------------+------------+------------+--------------+-------------+
+| issue_id | member_id | member_name | book_title                 | issue_date | due_date   | days_overdue | fine_so_far |
++----------+-----------+-------------+----------------------------+------------+------------+--------------+-------------+
+|       12 |         8 | Sneha Patel | The Guide                  | 2026-10-30 | 2026-11-13 |           11 |          55 |
+|       11 |         2 | Priya Verma | Wings of Fire              | 2026-11-04 | 2026-11-18 |            6 |          30 |
+|       13 |         4 | Neha Singh  | Introduction to Algorithms | 2026-11-06 | 2026-11-20 |            4 |          20 |
+|       15 |        10 | Arjun Yadav | Let Us C                   | 2026-11-08 | 2026-11-22 |            2 |          10 |
++----------+-----------+-------------+----------------------------+------------+------------+--------------+-------------+
++-----------+--------------+--------------------------+------------+------------+-------------+----------+
+| member_id | member_name  | book_title               | issue_date | due_date   | return_date | status   |
++-----------+--------------+--------------------------+------------+------------+-------------+----------+
+|         1 | Aarav Sharma | The Guide                | 2026-09-25 | 2026-10-09 | 2026-10-08  | Returned |
+|         1 | Aarav Sharma | Database System Concepts | 2026-10-15 | 2026-10-29 | 2026-10-27  | Returned |
+|         1 | Aarav Sharma | Database System Concepts | 2026-11-19 | 2026-12-03 | NULL        | Issued   |
++-----------+--------------+--------------------------+------------+------------+-------------+----------+
++------------------+------------------+
+| category_name    | number_of_titles |
++------------------+------------------+
+| Computer Science |                6 |
+| Fiction          |                2 |
+| Mathematics      |                2 |
+| Biography        |                1 |
+| History          |                1 |
+| Science          |                1 |
++------------------+------------------+
++----------------------------+--------------+
+| title                      | times_issued |
++----------------------------+--------------+
+| Database System Concepts   |            3 |
+| Let Us C                   |            2 |
+| Introduction to Algorithms |            2 |
+| Operating System Concepts  |            2 |
+| The Guide                  |            2 |
++----------------------------+--------------+
++----------------------+
+| total_fine_collected |
++----------------------+
+|                80.00 |
++----------------------+
++-------------+--------------+
+| full_name   | pending_fine |
++-------------+--------------+
+| Vikram Rao  |        35.00 |
+| Rohan Gupta |        15.00 |
++-------------+--------------+
++---------+-------------------------------------------+
+| book_id | title                                     |
++---------+-------------------------------------------+
+|      13 | Computer Organization and Architecture    |
+|      11 | Discrete Mathematics and Its Applications |
++---------+-------------------------------------------+
++---------------------+----------------+
+| full_name           | books_borrowed |
++---------------------+----------------+
+| Aarav Sharma        |              3 |
+| Priya Verma         |              2 |
+| Rohan Gupta         |              2 |
+| Neha Singh          |              2 |
+| Kabir Mehta         |              2 |
+| Dr. Rakesh Malhotra |              2 |
++---------------------+----------------+
++----------------------------+---------------------+------------+-----------+
+| title                      | full_name           | due_date   | days_left |
++----------------------------+---------------------+------------+-----------+
+| The Guide                  | Sneha Patel         | 2026-11-13 |       -11 |
+| Wings of Fire              | Priya Verma         | 2026-11-18 |        -6 |
+| Introduction to Algorithms | Neha Singh          | 2026-11-20 |        -4 |
+| Let Us C                   | Arjun Yadav         | 2026-11-22 |        -2 |
+| The Discovery of India     | Dr. Rakesh Malhotra | 2026-11-28 |         4 |
+| Operating System Concepts  | Dr. Rakesh Malhotra | 2026-11-30 |         6 |
+| Database System Concepts   | Aarav Sharma        | 2026-12-03 |         9 |
+| Gitanjali                  | Kabir Mehta         | 2026-12-05 |        11 |
++----------------------------+---------------------+------------+-----------+
++-------------------------------------------+----------------------------------------------------+
+| title                                     | authors                                            |
++-------------------------------------------+----------------------------------------------------+
+| Database System Concepts                  | Abraham Silberschatz, Henry F. Korth, S. Sudarshan |
+| Fundamentals of Database Systems          | Ramez Elmasri, Shamkant Navathe                    |
+| Introduction to Algorithms                | Thomas H. Cormen                                   |
+| Higher Engineering Mathematics            | B. S. Grewal                                       |
+| Wings of Fire                             | A. P. J. Abdul Kalam                               |
+| The Discovery of India                    | Jawaharlal Nehru                                   |
+| A Brief History of Time                   | Stephen Hawking                                    |
+| The Guide                                 | R. K. Narayan                                      |
+| Operating System Concepts                 | Abraham Silberschatz, Peter B. Galvin              |
+| Let Us C                                  | Yashavant Kanetkar                                 |
+| Discrete Mathematics and Its Applications | Kenneth H. Rosen                                   |
+| Gitanjali                                 | Rabindranath Tagore                                |
+| Computer Organization and Architecture    | William Stallings                                  |
++-------------------------------------------+----------------------------------------------------+
++-------------------------+--------+--------+
+| publisher_name          | titles | copies |
++-------------------------+--------+--------+
+| McGraw Hill Education   |      4 |      9 |
+| Oxford University Press |      2 |      5 |
+| Pearson India           |      3 |      8 |
+| Penguin Random House    |      4 |      7 |
++-------------------------+--------+--------+
++------------------+--------+
+| category_name    | titles |
++------------------+--------+
+| Computer Science |      6 |
++------------------+--------+
++------------------+---------------+
+| category_name    | average_price |
++------------------+---------------+
+| Biography        |        299.00 |
+| Computer Science |        763.33 |
+| Fiction          |        237.00 |
+| History          |        450.00 |
+| Mathematics      |        715.00 |
+| Science          |        399.00 |
++------------------+---------------+
++----------------+--------------+-----------+------------------+
+| reservation_id | full_name    | title     | reservation_date |
++----------------+--------------+-----------+------------------+
+|              1 | Ananya Joshi | Gitanjali | 2026-11-23       |
+|              2 | Vikram Rao   | Gitanjali | 2026-11-22       |
++----------------+--------------+-----------+------------------+
++-----------+--------------+------------------+
+| title     | total_copies | available_copies |
++-----------+--------------+------------------+
+| Gitanjali |            1 |                0 |
++-----------+--------------+------------------+
++-------------+--------------+
+| member_type | total_issues |
++-------------+--------------+
+| Student     |           15 |
+| Faculty     |            2 |
++-------------+--------------+
++-------------+-------------------------+
+| full_name   | email                   |
++-------------+-------------------------+
+| Priya Verma | priya.verma@college.edu |
+| Sneha Patel | sneha.patel@college.edu |
+| Neha Singh  | neha.singh@college.edu  |
+| Arjun Yadav | arjun.yadav@college.edu |
++-------------+-------------------------+
++------------------+--------+--------------+------------------+----------------+---------------------+
+| category_name    | titles | total_copies | available_copies | copies_on_loan | utilization_percent |
++------------------+--------+--------------+------------------+----------------+---------------------+
+| Biography        |      1 |            2 |                1 |              1 |                50.0 |
+| Computer Science |      6 |           15 |               11 |              4 |                26.7 |
+| Fiction          |      2 |            3 |                1 |              2 |                66.7 |
+| History          |      1 |            2 |                1 |              1 |                50.0 |
+| Mathematics      |      2 |            5 |                5 |              0 |                 0.0 |
+| Science          |      1 |            2 |                2 |              0 |                 0.0 |
++------------------+--------+--------------+------------------+----------------+---------------------+
++-------------+-----------------+--------------+
+| paid_status | number_of_fines | total_amount |
++-------------+-----------------+--------------+
+| Paid        |               2 |        80.00 |
+| Unpaid      |               2 |        50.00 |
++-------------+-----------------+--------------+
++-----------+-------------+-----------+
+| member_id | full_name   | status    |
++-----------+-------------+-----------+
+|         8 | Sneha Patel | Suspended |
+|        10 | Arjun Yadav | Suspended |
++-----------+-------------+-----------+
++----------------------------------------+----------------+
+| title                                  | shelf_location |
++----------------------------------------+----------------+
+| Computer Organization and Architecture | CS-A9          |
++----------------------------------------+----------------+
++----------------+-----------+
+| reservation_id | status    |
++----------------+-----------+
+|              1 | Pending   |
+|              2 | Pending   |
+|              3 | Fulfilled |
++----------------+-----------+
